@@ -75,17 +75,17 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
 
     final loginConfig = HashMap<String, LoginConfigItem>();
     loginConfig['jwt'] = LoginConfigItem(
-        verifier: "w3a-firebase-demo", // get it from web3auth dashboard
+        verifier: "provider-aggregate", // get it from web3auth dashboard
         typeOfLogin: TypeOfLogin.jwt,
         clientId:
-            "BPi5PB_UiIZ-cPz1GtV5i1I2iOSOHuimiXBI0e-Oe_u6X3oVAbCiAZOTEBtTXw4tsluTITPqA8zMsfxIKMjiqNQ" // web3auth's plug and play client id
+            "BJANAYFhtxnaovlyHdiaHS0fUr43NbIclfrBu2Fg8s5aRrjNZq0VJ11We7MhW9uzb16seEJBScB3cs58YbRZELI" // web3auth's plug and play client id
         );
 
     await Web3AuthFlutter.init(
       Web3AuthOptions(
         clientId:
-            'BPi5PB_UiIZ-cPz1GtV5i1I2iOSOHuimiXBI0e-Oe_u6X3oVAbCiAZOTEBtTXw4tsluTITPqA8zMsfxIKMjiqNQ',
-        network: Network.sapphire_mainnet,
+            'BJANAYFhtxnaovlyHdiaHS0fUr43NbIclfrBu2Fg8s5aRrjNZq0VJ11We7MhW9uzb16seEJBScB3cs58YbRZELI',
+        network: Network.sapphire_devnet,
         redirectUrl: redirectUrl,
         whiteLabel: WhiteLabelData(
           appName: "Web3Auth Flutter App",
@@ -103,6 +103,7 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
         // 259200 allows user to stay authenticated for 3 days with Web3Auth.
         // Default is 86400, which is 1 day.
         sessionTime: 259200,
+        chainNamespace: ChainNamespace.solana,
       ),
     );
 

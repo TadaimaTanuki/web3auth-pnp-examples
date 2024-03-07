@@ -62,14 +62,14 @@ PODS:
     - GenericJSON (~> 2.0)
     - Logging (~> 1.0.0)
     - secp256k1.swift (~> 0.1)
-  - Web3Auth (7.4.1):
+  - Web3Auth (7.5.1):
     - CryptoSwift (~> 1.8.0)
     - KeychainSwift (~> 20.0.0)
     - TorusSessionManager (~> 3.0.1)
     - web3.swift (~> 1.6.0)
   - web3auth_flutter (2.0.1):
     - Flutter
-    - Web3Auth (~> 7.4.1)
+    - Web3Auth (~> 7.5.1)
 
 DEPENDENCIES:
   - firebase_auth (from `.symlinks/plugins/firebase_auth/ios`)
@@ -121,7 +121,7 @@ SPEC CHECKSUMS:
   FirebaseAuth: 12314b438fa76048540c8fb86d6cfc9e08595176
   FirebaseCore: 2322423314d92f946219c8791674d2f3345b598f
   FirebaseCoreInternal: efeeb171ac02d623bdaefe121539939821e10811
-  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
   GenericJSON: 79a840eeb77030962e8cf02a62d36bd413b67626
   GoogleUtilities: 0759d1a57ebb953965c2dfe0ba4c82e95ccc2e34
   GTMSessionFetcher: 41b9ef0b4c08a6db4b7eb51a21ae5183ec99a2c8
@@ -133,9 +133,9 @@ SPEC CHECKSUMS:
   shared_preferences_foundation: e2dae3258e06f44cc55f49d42024fd8dd03c590c
   TorusSessionManager: 829495789427b7ad7e29f2b535092a44f3900b42
   web3.swift: 2263d1e12e121b2c42ffb63a5a7beb1acaf33959
-  Web3Auth: faf43a674c0db748dd4ff7fbe29a355d8736a186
-  web3auth_flutter: 208348cb4e01e0c0191adf740188c3b63f5fe20b
+  Web3Auth: 92765f42b9b1443a359475c39d2ae163a212eac5
+  web3auth_flutter: 86975c81b0271df0955b22dc34a532351eab6358
 
 PODFILE CHECKSUM: 775997f741c536251164e3eacf6e34abf2eb7a17
 
-COCOAPODS: 1.14.3
+COCOAPODS: 1.15.2
